@@ -1,0 +1,8 @@
+[package]
+name = "stack_set"
+version = "0.1.0"
+authors = ["Michaël Lévesque-Dion <mlevesquedion@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+next_prime = "0.1.1"
