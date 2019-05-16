@@ -63,7 +63,7 @@ impl<T: Copy + Hash + PartialEq> StackSet<T> {
             if self.table[hash].unwrap().0 == key {
                 return true;
             }
-            hash += offset;
+            hash = (hash + offset) % self.table.len();
             offset += 2;
         }
         false
